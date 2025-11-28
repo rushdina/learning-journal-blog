@@ -31,22 +31,21 @@
 
     <main id="blog-main">
       <!-- Blog content rendered here -->
-
-      <section class="recent-blogs container">
-        <h2>Recent blogs</h2>
-        <div class="grid" id="recent-blogs">
-          <!-- Recent blogs rendered here-->
-        </div>
-      </section>
     </main>
 
+    <aside class="recent-blogs container">
+      <h2>Recent blogs</h2>
+      <div class="grid" id="recent-blogs">
+        <!-- Recent blogs rendered here-->
+      </div>
+    </aside>
+
     <footer class="container">
-      s
       <p>My Learning Journal</p>
       <p>Copyright &copy; <span id="year"></span></p>
     </footer>
 
-    <script src="script2.js" type="module"></script>
+    <script type="module" src="./js/blogPage.js"></script>
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
