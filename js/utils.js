@@ -12,18 +12,17 @@ export function formatDate(dateString) {
 }
 
 // ===== RENDER BLOG CARDS used for homepage & recent blogs) =====
-export function renderBlogCards(arr, limit) {
-  const blogsToRender = limit ? arr.slice(0, limit) : arr;
-  return blogsToRender
+export function renderBlogCards(arr) {
+  return arr
     .map(
       ({ title, preview, date, tags, image, imageAlt, slug }) => `
       <a href="blog.html?slug=${slug}">
         <article class="blog-card">
-          <span class="blog-date">${formatDate(date)}</span> 
           <img class="blog-img" src="${image}" alt="${imageAlt}" /> 
+          <span class="blog-date date">${formatDate(date)}</span> 
           <h2 class="blog-title">${title}</h2>
           <p class="blog-preview">${preview}</p>
-          <p class="blog-tags">${tags.join(" · ")}</p>
+          <p class="blog-tags tags">${tags.join(" · ")}</p>
         </article>
       </a>
     `
@@ -38,11 +37,15 @@ export function renderFeaturedBlog(blog) {
   return `
     <a href="blog.html?slug=${slug}">
       <article class="featured-blog">
-        <span class="featured-date">${formatDate(date)}</span> 
         <img class="featured-img" src="${image}" alt="${imageAlt}" /> 
-        <h2 class="featured-title">${title}</h2>
-        <p class="featured-preview">${preview}</p>
-        <p class="featured-tags">${tags.join(" · ")}</p>
+        <div class="container">
+          <div class="featured-text">
+            <span class="featured-date date">${formatDate(date)}</span> 
+            <h2 class="featured-title">${title}</h2>
+            <p class="featured-preview">${preview}</p>
+            <p class="featured-tags tags">${tags.join(" · ")}</p>
+          </div>
+        </div>
       </article>
     </a>
   `;

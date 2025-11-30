@@ -1,0 +1,269 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Source Sans 3", sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.5;
+  margin: 0;
+  font-size: 16px;
+}
+
+/* MOBILE FIRST */
+
+.container {
+  padding: 1.75em; /* mobile padding */
+  max-width: 1400px; /* max width on large screens */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tags {
+  font-size: 0.875rem;
+  color: #4b4b4b;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+  color: #333;
+}
+
+/* ===== HEADER ===== */
+
+header {
+  background-color: #f5f5f5;
+}
+
+.logo-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.875em 1.75em;
+  position: relative;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.logo {
+  width: 24px;
+  height: 24px;
+}
+
+.hamburger {
+  display: block;
+  font-size: 1.25rem;
+  color: #333;
+  background-color: transparent;
+  padding: 0.3em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.nav-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  padding: 1.5em;
+  background-color: #333;
+  list-style-type: none;
+
+  opacity: 0;
+  z-index: 1000;
+}
+
+.nav-links.active {
+  opacity: 1;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* offset-x offset-y blur-radius color */
+}
+
+.nav-links li {
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 1.5em;
+}
+
+.nav-links a {
+  color: #fff;
+  display: block;
+}
+
+/* ===== FEATURED BLOG ===== */
+
+.featured-blog {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+
+.featured-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fix the stretch */
+  object-position: 50% 100%; /* horizontal 50% from left, vertical 80% from top */
+}
+
+.featured-text {
+  position: absolute;
+  bottom: 8%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-right: 1.5em;
+  max-width: 860px;
+}
+
+.date {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.featured-title {
+  font-size: 2.25rem;
+  line-height: 1.2;
+}
+
+.featured-preview {
+  font-size: 1.125rem;
+}
+
+.featured-tags {
+  color: #fff;
+}
+
+/* ===== BLOG LIST ===== */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-img {
+  margin-bottom: 1em;
+  border-radius: 4px;
+}
+
+.blog-title {
+  font-size: 1.5rem;
+  margin: 0.25em 0;
+}
+
+.blog-preview {
+  margin-bottom: 0.25em;
+}
+
+/* ===== VIEW MORE BTN ===== */
+
+.view-more-container {
+  display: flex;
+  justify-content: center;
+}
+
+.view-more-btn {
+  font-family: inherit;
+  font-size: 1.25em;
+  padding: 0.5em 1.25em;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  margin-top: 1.75em;
+}
+
+.footer-text {
+  color: #fff;
+  text-align: center;
+  margin: 2.25em;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-right: 4em;
+    padding-left: 4em;
+  }
+
+  /* ===== HEADER ===== */
+  .hamburger {
+    display: none;
+  }
+
+  .nav-links {
+    position: static; /* remove absolute */
+    background: none;
+    width: auto;
+    height: auto;
+    padding: 0;
+    display: flex; /* horizontal menu */
+    align-items: center;
+    gap: 2em;
+    opacity: 1;
+  }
+
+  .nav-links li {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .nav-links a {
+    color: #333;
+  }
+
+  /* ===== FEATURED ===== */
+
+  .featured-img {
+    object-position: 50% 30%;
+  }
+
+  .featured-title {
+    font-size: 3rem;
+  }
+
+  /* ====== BLOG LIST ===== */
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1125px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
