@@ -17,7 +17,7 @@ function renderBlogsBatch() {
 
   if (endIndex >= nonFeaturedBlogs.length) {
     const btn = document.getElementById("view-more");
-    if (btn) btn.style.display = "none";
+    if (btn) btn.style.display = "none"; // hide button
   }
 }
 

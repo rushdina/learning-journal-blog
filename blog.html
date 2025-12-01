@@ -6,21 +6,40 @@
     <title>Blog</title>
 
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- FontAwesome Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
       <div class="logo-nav container">
-        <a href="index.html" class="logo">
-          <img src="./images/logo.png" alt="My Learning Journal Logo" />
+        <a href="index.html" class="logo-link">
+          <img
+            src="./images/logo.png"
+            alt="My Learning Journal Logo"
+            class="logo"
+          />
           <span>My Learning Journal</span>
         </a>
+
         <nav>
+          <button id="hamburger" class="hamburger" aria-label="Toggle menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
           <ul class="nav-links">
             <li><a href="index.html">HOME</a></li>
             <li><a href="about.html">ABOUT ME</a></li>
@@ -40,12 +59,15 @@
       </div>
     </aside>
 
-    <footer class="container">
-      <p>My Learning Journal</p>
-      <p>Copyright &copy; <span id="year"></span></p>
+    <footer>
+      <div class="footer-text">
+        <p><b>My Learning Journal</b></p>
+        <p>Copyright &copy; <span id="year"></span></p>
+      </div>
     </footer>
 
-    <script type="module" src="./js/blogPage.js"></script>
+    <script src="./js/navbar.js" type="module"></script>
+    <script src="./js/blogPage.js" type="module"></script>
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
