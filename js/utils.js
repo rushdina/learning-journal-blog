@@ -17,7 +17,7 @@ export function renderBlogCards(arr, headingLevel = "h2") {
     .map(
       ({ title, preview, date, tags, image, imageAlt, slug }) => `
         <article class="blog-card">
-          <img class="blog-img" src="${image}" alt="${imageAlt}" /> 
+          <img class="blog-img" src="${image}" alt="${imageAlt || ""}" /> 
           <span class="blog-date date">${formatDate(date)}</span> 
           <${headingLevel} class="blog-title title">${title}</${headingLevel}>
           <p class="blog-preview">${preview}</p>
@@ -35,7 +35,7 @@ export function renderFeaturedBlog(blog) {
   const { slug, title, preview, date, tags, image, imageAlt } = blog;
   return `
     <article class="featured-blog">
-      <img class="featured-img" src="${image}" alt="${imageAlt}" /> 
+      <img class="featured-img" src="${image}" alt="${imageAlt || ""}" /> 
       <div class="container">
         <div class="featured-text">
           <span class="featured-date date">${formatDate(date)}</span> 

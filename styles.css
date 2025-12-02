@@ -44,6 +44,10 @@ a:visited {
   color: #333;
 }
 
+a:hover {
+  font-weight: bold;
+}
+
 .title {
   line-height: 1.2;
 }

@@ -1,9 +1,4 @@
-import {
-  blogs,
-  renderBlogCards,
-  formatDate,
-  renderRecentBlogs,
-} from "./utils.js";
+import { blogs, formatDate, renderRecentBlogs } from "./utils.js";
 
 // ===== RENDER INDIVIDUAL BLOG PAGE =====
 export function renderBlogPage() {
