@@ -147,7 +147,7 @@ header {
   flex-direction: column;
   gap: 10px;
   padding-right: 1.5em;
-  max-width: 860px;
+  max-width: 900px;
 }
 
 .featured-title {
