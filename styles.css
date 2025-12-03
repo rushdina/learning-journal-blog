@@ -14,6 +14,17 @@ body {
   line-height: 1.5;
   margin: 0;
   font-size: 16px;
+  height: 100%; /* Sticky Footer with Flexbox so that theres no empty gaps below footer */
+}
+
+/* Sticky Footer with Flexbox so that theres no empty gaps below footer */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* take up remaining space */
 }
 
 /* MOBILE FIRST */
