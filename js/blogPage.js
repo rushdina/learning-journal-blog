@@ -1,5 +1,13 @@
 import { blogs, formatDate, renderRecentBlogs } from "./utils.js";
 
+// ===== Convert slug to a readable title =====
+function formatSlugToTitle(slug) {
+  return slug
+    .split("-")
+    .map((word) => word[0].toUpperCase() + word.slice(1))
+    .join(" ");
+}
+
 // ===== RENDER INDIVIDUAL BLOG PAGE =====
 export function renderBlogPage() {
   const blogMain = document.getElementById("blog-main");
@@ -13,6 +21,8 @@ export function renderBlogPage() {
     blogMain.innerHTML = `<p>Blog not found.</p>`;
     return;
   }
+
+  document.title = formatSlugToTitle(blog.slug); // set the page title dynamically
 
   blogMain.innerHTML = `
     <div class="container">
