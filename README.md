@@ -15,7 +15,7 @@ Users can view a featured blog, browse recent posts, and read full blog articles
 - Single HTML template for all blog pages via `slug`, and recent blogs.
 - Responsive design and accessible hamburger menu.
 
-## 🧠 What I Learned 
+## 🧩 Concepts Practiced
 - DOM manipulation & template rendering.
 - ES6 modules using `import`/`export`.
 - URL query handling with `URLSearchParams` for routing to individual blog pages.
