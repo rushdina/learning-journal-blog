@@ -1,42 +1,34 @@
 # 📝 Learning Journal Blog
 
-A responsive learning journal blog website solo project from the [Scrimba Frontend Developer Career Path](https://scrimba.com/frontend-path-c0j).  
+A responsive learning journal blog solo project from the [Scrimba Frontend Developer Career Path](https://scrimba.com/frontend-path-c0j).  
 Users can view a featured blog, browse recent posts, and read full blog articles with a clean, accessible layout.
 
+## 🖼️ Preview
+🔗 Live Demo: https://scrimba-learning-journal-rushdina.netlify.app/
+
+![Desktop View Preview](images/preview/preview-desktop-view.png)
+![Mobile View Preview](images/preview/preview-mobile-view.png)
+
 ## 🛠️ Tech Stack
-- HTML5
-- CSS3
-- JavaScript (ES6)
+- `HTML`, `CSS`, `JavaScript` 
 
-## 🚀 Features
-- Featured blog hero with overlay text.
-- Blog listing in grid layout with dynamic rendering.
-- Pagination with "View More" button.
-- Single HTML template for all blog pages via `slug`, and recent blogs.
-- Responsive design and accessible hamburger menu.
-
-## 🧩 Concepts Practiced
-- DOM manipulation & template rendering.
-- ES6 modules using `import`/`export`.
-- URL query handling with `URLSearchParams` for routing to individual blog pages.
-- Grid & Flexbox for responsive layouts.
-- Pagination logic for rendering blog batches.
-- Semantic HTML and accessibility.
+## 📚 What I Learned 
+- DOM manipulation & template rendering using JS
+- ES6 modules with `import`/`export`
+- URL query handling via `URLSearchParams` for routing to individual blog pages
+- Grid & Flexbox for responsive, mobile-first layouts
+- Pagination logic & “View More” button for loading blog batches
+- Semantic HTML for accessibility
+- Single HTML template for all blog pages using `slug` and recent posts
+- Responsive design using relative units, media queries, and an accessible hamburger menu
 
 ## 💡 Future Improvements
-- Multiple featured blogs in hero grid or carousel.
-- Animated responsive navigation.
-- Numbered pagination and/or infinite scroll.
-- Clickable tags for filtering blogs.
-- Search and sort functionality.
-- Lazy loading images, dark mode toggle, animations, SEO optimization.
-  
-## 🖼️ Preview
+- Multiple featured blogs in hero grid or carousel
+- Numbered pagination
+- Clickable tags for filtering blogs
+- Search and sort functionality
 
-![Desktop view preview](images/preview/preview-desktop-view.png)
-![Mobile view preview](images/preview/preview-mobile-view.png)
-
-## 🙌 Credits
+## 🙌 Acknowledgements
 - **Scrimba course:** [Scrimba Frontend Developer Career Path](https://scrimba.com/frontend-path-c0j)
 - **Design reference:** [Figma by Scrimba](https://www.figma.com/design/hE5klIn1AEQ9XWZWmurs7y/Learning-Journal-Blog?node-id=0-1&p=f&t=Z0U3bPFqEfZRjIgZ-0)
 - **Icons:** [Font Awesome](https://fontawesome.com/)
