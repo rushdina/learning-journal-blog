@@ -1,16 +1,16 @@
 # 📝 Learning Journal Blog
 
-A responsive learning journal blog solo project from the [Scrimba Frontend Developer Career Path](https://scrimba.com/frontend-path-c0j).  
-Users can view a featured blog, browse recent posts, and read full blog articles with a clean, accessible layout.
+A responsive learning journal blog that users can view a featured blog, browse recent posts, and read full blog articles with a clean, accessible layout.
 
 ## 🖼️ Preview
 🔗 Live Demo: https://scrimba-learning-journal-rushdina.netlify.app/
 
-![Desktop View Preview](images/preview/preview-desktop-view.png)
-![Mobile View Preview](images/preview/preview-mobile-view.png)
+![Learning Journal Blog Desktop View Preview](images/preview/preview-desktop-view.png)
+![Learning Journal Blog Mobile View Preview](images/preview/preview-mobile-view.png)
 
-## 🛠️ Tech Stack
-- `HTML`, `CSS`, `JavaScript` 
+## 🛠️ Technologies Used
+- **Frontend:** `HTML`, `CSS`, `JavaScript`
+- **Icons:** [Font Awesome](https://fontawesome.com/) 
 
 ## 📚 What I Learned 
 - DOM manipulation & template rendering using JS
@@ -26,11 +26,10 @@ Users can view a featured blog, browse recent posts, and read full blog articles
 - Multiple featured blogs in hero grid or carousel
 - Numbered pagination
 - Clickable tags for filtering blogs
-- Search and sort functionality
+- Search, filter and sort functionality
 
 ## 🙌 Acknowledgements
 - **Scrimba course:** [Scrimba Frontend Developer Career Path](https://scrimba.com/frontend-path-c0j)
 - **Design reference:** [Figma by Scrimba](https://www.figma.com/design/hE5klIn1AEQ9XWZWmurs7y/Learning-Journal-Blog?node-id=0-1&p=f&t=Z0U3bPFqEfZRjIgZ-0)
-- **Icons:** [Font Awesome](https://fontawesome.com/)
 - **Image assets:** Provided by Scrimba
   
