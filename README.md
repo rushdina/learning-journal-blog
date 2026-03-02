@@ -3,7 +3,7 @@
 A responsive learning journal blog that users can view a featured blog, browse recent posts, and read full blog articles with a clean, accessible layout.
 
 ## 🖼️ Preview
-🔗 Live Demo: https://scrimba-learning-journal-rushdina.netlify.app/
+🔗 Live Demo: https://learning-journal-blog-rushdina.netlify.app/
 
 ![Learning Journal Blog Desktop View Preview](images/preview/preview-desktop-view.png)
 ![Learning Journal Blog Mobile View Preview](images/preview/preview-mobile-view.png)
@@ -29,7 +29,6 @@ A responsive learning journal blog that users can view a featured blog, browse r
 - Search, filter and sort functionality
 
 ## 🙌 Acknowledgements
-- **Scrimba course:** [Scrimba Frontend Developer Career Path](https://scrimba.com/frontend-path-c0j)
-- **Design reference:** [Figma by Scrimba](https://www.figma.com/design/hE5klIn1AEQ9XWZWmurs7y/Learning-Journal-Blog?node-id=0-1&p=f&t=Z0U3bPFqEfZRjIgZ-0)
-- **Image assets:** Provided by Scrimba
+- Solo project from [Scrimba Frontend Developer Career Path](https://scrimba.com/frontend-path-c0j)
+- Design reference and image assets from [Figma by Scrimba](https://www.figma.com/design/hE5klIn1AEQ9XWZWmurs7y/Learning-Journal-Blog?node-id=0-1&p=f&t=Z0U3bPFqEfZRjIgZ-0)
   
