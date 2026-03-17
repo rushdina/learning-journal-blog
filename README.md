@@ -2,8 +2,8 @@
 
 A responsive learning journal blog that users can view a featured blog, browse recent posts, and read full blog articles with a clean, accessible layout.
 
-## 🖼️ Preview
-🔗 Live Demo: https://learning-journal-blog-rushdina.netlify.app/
+## 🌐 Live Demo
+🔗 View app: https://learning-journal-blog-rushdina.netlify.app/
 
 ![Learning Journal Blog Desktop View Preview](images/preview/preview-desktop-view.png)
 ![Learning Journal Blog Mobile View Preview](images/preview/preview-mobile-view.png)
