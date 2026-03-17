@@ -6,7 +6,7 @@ A responsive learning journal blog that users can view a featured blog, browse r
 🔗 View app: https://learning-journal-blog-rushdina.netlify.app/
 
 ![Learning Journal Blog Desktop View Preview](images/preview/preview-desktop-view.png)
-![Learning Journal Blog Mobile View Preview](images/preview/preview-mobile-view.png)
+<!--![Learning Journal Blog Mobile View Preview](images/preview/preview-mobile-view.png)-->
 
 ## 🛠️ Technologies Used
 - **Frontend:** `HTML`, `CSS`, `JavaScript`
